@@ -14,6 +14,7 @@ int main() {
 
     IterationControl<State> sera;
     State stat = sera.climb(1.8, State::initState());
+    stat.print();
 
     cerr << "my score = " << stat.score << endl;
     cerr << "elapsed time = " << toki.elapsed() << endl;
